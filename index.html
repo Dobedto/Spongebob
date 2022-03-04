@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Ej clase eventos</title>
+	</head>
+	<body>
+		<script>
+			window.onload = function(){
+				let img;
+				img = document.getElementsByTagName("img")[0];
+				img.addEventListener('mouseover', cambiar);
+				img.addEventListener('mouseout', cambiar2);
+				
+				function cambiar()
+				{
+					this.src = "bob.jpg";
+				}
+				function cambiar2()
+				{
+					this.src = "bob2.png";
+				}
+			}
+		</script>
+		<h1>Prueba</h1>
+		<p>
+			<img src="bob2.png">
+		</p>
+	</body>
+</html>
